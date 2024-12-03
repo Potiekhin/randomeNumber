@@ -6,7 +6,7 @@ function App() {
   const [randomNumber, setRandomNumber] = useState(null);
   const [iteration, setIteration] = useState(0);
 
-  const winner = 20
+  const winner = 222
 
   const addNumber = () => {
     if (inputValue.trim() !== "" && !isNaN(inputValue)) {
@@ -72,7 +72,7 @@ function App() {
         </button>
         {randomNumber !== null && (
           <div className="mt-4 text-center text-lg font-bold text-green-600">
-            Selected Number: {randomNumber}
+            <div>Виграшний номер</div> <div className="text-red-500">{randomNumber}</div>
           </div>
         )}
       </div>
