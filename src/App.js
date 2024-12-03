@@ -35,7 +35,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-800">
       <div className="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
         <h1 className="text-2xl font-bold text-center mb-4">Розіграш Машини від AutoLux</h1>
         <div className="flex gap-2 mb-4">
@@ -58,7 +58,7 @@ function App() {
           <h2 className="text-lg font-medium mb-2 justify-self-center">Квитки</h2>
           <ul className="list-inside p-4 rounded-lg flex flex-wrap gap-3">
             {numbers.map((num, index) => (
-              <li key={index} className="text-gray-700 bg-green-500 py-1 px-3 rounded-lg">
+              <li key={index} className="text-gray-700 bg-blue-500 py-1 px-3 rounded-lg">
                 {num}
               </li>
             ))}
@@ -71,8 +71,8 @@ function App() {
           Вибрати випадковий квиток
         </button>
         {randomNumber !== null && (
-          <div className="mt-4 text-center text-lg font-bold text-green-600">
-            <div>Виграшний номер</div> <div className="text-red-500">{randomNumber}</div>
+          <div className="mt-4 text-center text-lg font-bold text-blue-600">
+            <div>Виграшний номер</div> <div className="text-green-500 text-4xl">{randomNumber}</div>
           </div>
         )}
       </div>
