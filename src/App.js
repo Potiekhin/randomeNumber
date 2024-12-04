@@ -6,7 +6,7 @@ function App() {
   const [randomNumber, setRandomNumber] = useState(null);
   const [iteration, setIteration] = useState(0);
 
-  const winner = 222
+  const winner = 82
 
   const addNumber = () => {
     if (inputValue.trim() !== "" && !isNaN(inputValue)) {
